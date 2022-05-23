@@ -12,8 +12,13 @@ OOP Exercise Chapter 6
 จากนั้นแสดงข้อมูลทางหน้าจอภาพ
 
 """
+
+
+
 car_stors = []
 num = int(input('คุณมีรถกี่คัน? :'))
+
+
 for x in range(num):
     brand = input('ยี่ห้อรถ:')
     model = input('รุ่นรถ:')
@@ -21,8 +26,9 @@ for x in range(num):
     max_speed = input('ความรเร็วสูงสุด:')
     price = float(input('ราคา: '))
 
-    car_stors .append(car(brand, model, color, max_speed,price))
 
+    b = (brand, model, color, max_speed,price)
+    car_stors.append(b)
 
     def display_car(car):
         for x in car:
