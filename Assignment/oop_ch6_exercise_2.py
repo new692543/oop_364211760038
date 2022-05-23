@@ -27,7 +27,7 @@ for x in range(num):
     price = float(input('ราคา: '))
 
 
-    b = (brand, model, color, max_speed,price)
+    b = car (brand, model, color, max_speed,price)
     car_stors.append(b)
 
     def display_car(car):
